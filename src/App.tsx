@@ -1,18 +1,10 @@
-import { useState } from 'react'
+import { Layout } from './components/Layout'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>Nora - Dark Bakery</h1>
-      <div className='p-4'>
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>1
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-    </>
+    <Layout>
+      <span>Content here</span>
+    </Layout>
   )
 }
 
