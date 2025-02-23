@@ -1,7 +1,7 @@
 import { Box, IconButton, IconButtonProps } from '@mui/material'
 import { ElementType, PropsWithChildren } from 'react'
 
-type Props<T extends ElementType> = PropsWithChildren & IconButtonProps<T> & { component?: T }
+type Props<T extends ElementType> = PropsWithChildren<IconButtonProps<T>> & { component?: T }
 
 export const ContainedIconButton = <T extends ElementType>({ children, ...rest }: Props<T>) => {
   return (
