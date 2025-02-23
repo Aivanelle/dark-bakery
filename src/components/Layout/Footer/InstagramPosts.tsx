@@ -10,46 +10,58 @@ export const InstagramPosts = () => {
         columns={2}
         sx={{ mt: 8, maxWidth: 352 }}
       >
-        <Grid size={1}>
+        <Grid
+          size={1}
+          sx={{ overflow: 'hidden', borderRadius: 2 }}
+        >
           <Link
             href='https://www.instagram.com/p/C-tdio0ycWO/'
             target='_blank'
           >
             <img
-              className='rounded-lg object-contain aspect-square'
+              className='object-cover aspect-square w-full hover:scale-105 transition-scale duration-500'
               src='/posts/post-3.jpeg'
             />
           </Link>
         </Grid>
-        <Grid size={1}>
+        <Grid
+          size={1}
+          sx={{ overflow: 'hidden', borderRadius: 2 }}
+        >
           <Link
             href='https://www.instagram.com/p/C9OByDmSChQ/'
             target='_blank'
           >
             <img
-              className='rounded-lg object-cover aspect-square'
+              className='object-cover aspect-square w-full hover:scale-105 transition-scale duration-500'
               src='/posts/post-2.jpeg'
             />
           </Link>
         </Grid>
-        <Grid size={1}>
+        <Grid
+          size={1}
+          sx={{ overflow: 'hidden', borderRadius: 2 }}
+        >
           <Link
             href='https://www.instagram.com/p/C-tce9RSvEY/'
             target='_blank'
           >
             <img
-              className='rounded-lg object-cover aspect-square'
+              className='object-cover aspect-square w-full hover:scale-105 transition-scale duration-500'
               src='/posts/post-1.jpeg'
             />
           </Link>
         </Grid>
-        <Grid size={1}>
+        <Grid
+          size={1}
+          sx={{ overflow: 'hidden', borderRadius: 2 }}
+        >
           <Link
             href='https://www.instagram.com/p/C-tcn2CSCnZ/'
             target='_blank'
           >
             <img
-              className='rounded-lg object-cover aspect-square'
+              className='object-cover aspect-square w-full hover:scale-105 transition-scale duration-500'
               src='/posts/post-4.jpeg'
             />
           </Link>
