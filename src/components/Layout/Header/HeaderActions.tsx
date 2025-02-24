@@ -1,7 +1,7 @@
+import { ShoppingCart } from '@/components/ShoppingCart'
 import AccountCircleOutlined from '@mui/icons-material/AccountCircleOutlined'
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder'
-import ShoppingBag from '@mui/icons-material/ShoppingBagOutlined'
-import { Badge, Divider, IconButton, Stack } from '@mui/material'
+import { Divider, IconButton, Stack } from '@mui/material'
 
 export const HeaderActions = () => {
   return (
@@ -26,22 +26,7 @@ export const HeaderActions = () => {
       <IconButton color='secondary'>
         <AccountCircleOutlined />
       </IconButton>
-      <Stack
-        direction='row'
-        sx={{ alignItems: 'center' }}
-      >
-        <IconButton color='secondary'>
-          <Badge
-            badgeContent={1}
-            color='secondary'
-            sx={{ '& .MuiBadge-badge': { fontSize: 8, height: 14, minWidth: 14 } }}
-            overlap='circular'
-          >
-            <ShoppingBag />
-          </Badge>
-        </IconButton>
-        <span className='font-medium'>$57.00</span>
-      </Stack>
+      <ShoppingCart />
     </Stack>
   )
 }
