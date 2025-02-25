@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router'
-import { Layout } from './components/Layout'
-import { ProductsLayout } from './pages/products/components/ProductsLayout'
-import { HomeProducts } from './pages/products/HomeProducts'
+import { ProductsLayout } from './components/layouts/ProductsLayout'
+import { RootLayout } from './components/layouts/RootLayout'
+import { HomeProducts } from './pages/HomeProducts'
 
 function App() {
   return (
     <Routes>
-      <Route element={<Layout />}>
+      <Route element={<RootLayout />}>
         <Route element={<ProductsLayout />}>
           <Route
             index
