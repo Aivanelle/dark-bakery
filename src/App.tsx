@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router'
 import { ProductsLayout } from './components/layouts/ProductsLayout'
 import { RootLayout } from './components/layouts/RootLayout'
 import { HomeProducts } from './pages/HomeProducts'
+import { ProductDetails } from './pages/ProductDetails'
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
             index
             element={<HomeProducts />}
           />
+          <Route
+            path='details'
+            element={<ProductDetails />}
+          />
         </Route>
       </Route>
     </Routes>
@@ -19,3 +24,4 @@ function App() {
 }
 
 export default App
+
