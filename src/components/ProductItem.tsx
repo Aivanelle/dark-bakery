@@ -1,5 +1,6 @@
 import { FavoriteBorderOutlined, StarRounded } from '@mui/icons-material'
 import { Box, Button, ButtonBase, Paper, Stack } from '@mui/material'
+import { NavLink } from 'react-router'
 import productPlaceholder from '/product-placeholder.jpg'
 
 type Props = {
@@ -15,7 +16,11 @@ export const ProductItem = ({ name, rating, price }: Props) => {
       sx={{ borderRadius: 4, minHeight: 344, height: '100%', display: 'flex', flexDirection: 'column' }}
     >
       <Box className='relative rounded-t-2xl overflow-hidden'>
-        <ButtonBase className='w-full'>
+        <ButtonBase
+          className='w-full'
+          component={NavLink}
+          to='/details'
+        >
           <img
             className='h-50 w-full object-cover'
             src={productPlaceholder}
@@ -50,7 +55,7 @@ export const ProductItem = ({ name, rating, price }: Props) => {
         <Button
           variant='outlined'
           color='secondary'
-          sx={{ fontSize: '0.75rem', py: 2, px: 6 }}
+          sx={{ fontSize: '0.75rem', py: 2, px: 6, borderRadius: 50 }}
         >
           Agregar
         </Button>
