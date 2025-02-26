@@ -10,10 +10,7 @@ const theme = createTheme({
   components: {
     MuiButton: {
       defaultProps: {
-        style: {
-          textTransform: 'initial',
-          borderRadius: 999
-        }
+        style: { textTransform: 'initial' }
       }
     }
   },
