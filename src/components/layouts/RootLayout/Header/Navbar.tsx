@@ -27,9 +27,10 @@ const links = [
 export const Navbar = () => {
   return (
     <Stack
+      className='items-center'
       component='nav'
       direction='row'
-      sx={{ gap: 2, alignItems: 'center' }}
+      spacing={2}
     >
       {links.map((link, index) => (
         <Button

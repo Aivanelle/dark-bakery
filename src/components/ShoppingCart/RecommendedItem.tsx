@@ -5,12 +5,12 @@ import shoppingPlaceholder from '/shopping-placeholder.jpg'
 export const RecommendedItem = () => {
   return (
     <Stack
+      className='mt-auto'
       spacing={5}
-      sx={{ mt: 'auto' }}
     >
       <Stack
+        className='items-center content-between'
         direction='row'
-        sx={{ alignItems: 'center', justifyContent: 'space-between' }}
       >
         <IconButton>
           <ChevronLeft sx={{ opacity: 0.4 }} />
@@ -22,19 +22,19 @@ export const RecommendedItem = () => {
       </Stack>
 
       <Stack
+        className='px-8'
         direction='row'
         spacing={6}
-        sx={{ px: 8 }}
       >
         <img
           className='object-cover w-25 h-32'
           src={shoppingPlaceholder}
         />
-        <Stack sx={{ justifyContent: 'space-between' }}>
+        <Stack className='justify-between'>
           <span className='font-medium text-lg'>Hogaza con aceitunas verdes</span>
           <Stack
+            className='justify-between items-center'
             direction='row'
-            sx={{ justifyContent: 'space-between', alignItems: 'center' }}
           >
             <span className='font-medium text-lg'>$15.00</span>
             <Button

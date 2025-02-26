@@ -30,10 +30,10 @@ export const ShoppingDrawer = ({ open, toggleDrawer }: Props) => {
       open={open}
       onClose={toggleDrawer(false)}
     >
-      <Stack sx={{ maxWidth: 468, height: '100%', overflow: 'hidden' }}>
+      <Stack className='max-w-[29.25rem] h-full overflow-hidden'>
         <Stack
+          className='mb-8 p-6 pb-0 justify-between items-center'
           direction='row'
-          sx={{ mb: 8, p: 6, pb: 0, justifyContent: 'space-between', alignItems: 'center' }}
         >
           <span className='text-2xl font-medium tracking-wide'>
             Tu carrito <span className='text-red-500'>(3)</span>
@@ -44,8 +44,9 @@ export const ShoppingDrawer = ({ open, toggleDrawer }: Props) => {
         </Stack>
 
         <Stack
+          className='overflow-x-auto px-6 pb-4 h-full'
           direction='column'
-          sx={{ gap: 6, overflowX: 'auto', px: 6, pb: 4, height: '100%' }}
+          spacing={6}
         >
           {items.map((item, index) => (
             <ShoppingItem

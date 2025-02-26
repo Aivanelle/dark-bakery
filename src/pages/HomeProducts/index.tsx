@@ -36,7 +36,7 @@ const products = [
 
 export const HomeProducts = () => {
   return (
-    <Box sx={{ p: 12 }}>
+    <Box className='p-12'>
       <Stack sx={[(theme) => ({ maxWidth: theme.breakpoints.values.lg }), { mx: 'auto' }]}>
         <Stack
           className='justify-between items-center'

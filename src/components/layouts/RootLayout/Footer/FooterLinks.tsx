@@ -6,8 +6,9 @@ export const FooterLinks = () => {
       <Stack>
         <h2 className='text-white font-medium'>Sitio</h2>
         <Stack
+          className='mt-8 text-white, font-[300] items-start'
           spacing={4}
-          sx={{ mt: 8, color: 'white', fontWeight: 300, alignItems: 'flex-start' }}
+          // sx={{ mt: 8, color: 'white', fontWeight: 300, alignItems: 'flex-start' }}
         >
           <Link
             underline='hover'
@@ -49,8 +50,8 @@ export const FooterLinks = () => {
       <Stack>
         <h2 className='text-white font-medium'>Ayuda</h2>
         <Stack
+          className='mt-8 text-white, font-[300] items-start'
           spacing={4}
-          sx={{ mt: 8, color: 'white', fontWeight: 300, alignItems: 'flex-start' }}
         >
           <Link
             underline='hover'

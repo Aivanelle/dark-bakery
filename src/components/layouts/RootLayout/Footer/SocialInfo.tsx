@@ -8,7 +8,7 @@ import darkLogo from '/dark-logo.svg'
 
 export const SocialInfo = () => {
   return (
-    <Stack sx={{ minWidth: 'max-content' }}>
+    <Stack className='min-w-max'>
       <img
         className='invert-100'
         width={96}
@@ -22,9 +22,9 @@ export const SocialInfo = () => {
         euismod, risus sit amet
       </p>
       <Stack
+        className='mt-8'
         direction='row'
         spacing={3}
-        sx={{ mt: 8 }}
       >
         <ContainedIconButton>
           <X fontSize='small' />

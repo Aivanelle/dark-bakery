@@ -17,9 +17,9 @@ export const AmountStepper = ({ initialAmount }: { initialAmount: number }) => {
 
   return (
     <Stack
+      className='border-1 rounded-4xl px-2 py-1 items-center'
       direction='row'
       spacing={2}
-      sx={{ borderWidth: 1, borderRadius: 50, px: 2, py: 1, alignItems: 'center' }}
     >
       <IconButton
         color='secondary'

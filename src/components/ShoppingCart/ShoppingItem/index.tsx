@@ -21,11 +21,11 @@ export const ShoppingItem = ({ name, amount, price }: Props) => {
           src={shoppingPlaceholder}
         />
 
-        <Stack sx={{ flex: 1, justifyContent: 'space-between' }}>
+        <Stack className='flex-1 justify-between'>
           <Stack
+            className='justify-between items-start'
             direction='row'
             spacing={4}
-            sx={{ justifyContent: 'space-between', alignItems: 'flex-start' }}
           >
             <span className='font-medium text-lg'>{name}</span>
             <IconButton color='secondary'>
@@ -33,8 +33,8 @@ export const ShoppingItem = ({ name, amount, price }: Props) => {
             </IconButton>
           </Stack>
           <Stack
+            className='justify-between items-center'
             direction='row'
-            sx={{ justifyContent: 'space-between', alignItems: 'center' }}
           >
             <span className='font-medium text-lg'>${price.toFixed(2)}</span>
             <AmountStepper initialAmount={amount} />

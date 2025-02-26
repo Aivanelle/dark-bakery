@@ -11,8 +11,8 @@ export const ShoppingCart = () => {
   return (
     <>
       <Stack
+        className='items-center'
         direction='row'
-        sx={{ alignItems: 'center' }}
       >
         <IconButton
           color='secondary'

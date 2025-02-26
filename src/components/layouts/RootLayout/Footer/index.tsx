@@ -18,18 +18,13 @@ export const Footer = () => {
             sx={{ borderColor: 'white', opacity: 0.4, mt: 18 }}
           />
         }
-        sx={[
-          (theme) => ({
-            maxWidth: theme.breakpoints.values.lg
-          }),
-          { mx: 'auto' }
-        ]}
+        sx={[(theme) => ({ maxWidth: theme.breakpoints.values.lg }), { mx: 'auto' }]}
       >
         <Stack
+          className='justify-between'
           direction='row'
           spacing={4}
           useFlexGap
-          sx={{ justifyContent: 'space-between' }}
         >
           <SocialInfo />
           <FooterLinks />

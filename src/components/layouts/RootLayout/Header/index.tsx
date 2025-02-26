@@ -6,9 +6,9 @@ import lightLogo from '/light-logo.svg'
 export const Header = () => {
   return (
     <Stack
+      className='p-12 justify-between'
       component='header'
       direction='row'
-      sx={{ p: 12, justifyContent: 'space-between' }}
     >
       <Link href='#'>
         <img

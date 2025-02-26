@@ -3,13 +3,14 @@ import { Button, Link, Stack } from '@mui/material'
 export const DrawerFooter = () => {
   return (
     <Stack
+      className='p-4 m-6 mt-0 rounded-lg'
       spacing={4}
       useFlexGap
-      sx={[(theme) => ({ backgroundColor: theme.palette.secondary.main }), { p: 4, m: 6, mt: 0, borderRadius: 2 }]}
+      sx={(theme) => ({ backgroundColor: theme.palette.secondary.main })}
     >
       <Stack
+        className='text-white items-center justify-between'
         direction='row'
-        sx={{ color: 'white', alignItems: 'center', justifyContent: 'space-between' }}
       >
         <span className='text-xl'>Subtotal</span>
         <span className='text-2xl tracking-wide'>$35.09</span>
