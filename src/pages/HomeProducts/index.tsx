@@ -1,10 +1,11 @@
+import { MBreadcrumbs } from '@/components/MBreadcrumbs'
 import { ProductItem } from '@/components/ProductItem'
-import { Box, Breadcrumbs, Grid2 as Grid, Link, Stack } from '@mui/material'
+import { Box, Grid2 as Grid, Stack } from '@mui/material'
 import { AsideFilters } from './components/AsideFilters'
 import { FooterInfo } from './components/FooterInfo'
 import { SortByMenu } from './components/SortByMenu'
 
-const breadcrumbsPath = ['Inicio', 'Productos', 'Hogaza']
+const crumbs = ['Inicio', 'Productos', 'Hogaza']
 const products = [
   {
     name: 'Hogaza con aceituna negra',
@@ -41,22 +42,7 @@ export const HomeProducts = () => {
           className='justify-between items-center'
           direction='row'
         >
-          <Breadcrumbs
-            separator='›'
-            sx={{ fontSize: '0.875rem' }}
-          >
-            {breadcrumbsPath.map((path, index) => (
-              <Link
-                key={index}
-                color='inherit'
-                underline='hover'
-                href='#'
-                sx={{ fontWeight: index === breadcrumbsPath.length - 1 ? 'medium' : 'regular' }}
-              >
-                {path}
-              </Link>
-            ))}
-          </Breadcrumbs>
+          <MBreadcrumbs crumbs={crumbs} />
           <Stack
             className='items-center'
             direction='row'
